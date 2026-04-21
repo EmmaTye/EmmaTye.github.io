@@ -17,6 +17,13 @@ bundle config set --local path 'vendor/bundle'
 bundle install
 ```
 
+(Re-)build the svg assets from the tex files:
+
+```
+make clean
+make build-svgs
+```
+
 Serve the site locally via:
 
 ```sh

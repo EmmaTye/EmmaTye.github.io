@@ -6,3 +6,7 @@ vendor
 .bundle
 .direnv
 .envrc
+*.aux
+*.log
+*.dvi
+

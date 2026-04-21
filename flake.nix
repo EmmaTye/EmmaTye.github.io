@@ -21,6 +21,12 @@
           gcc
           ruby
           bundler
+          # Haskell
+          cabal-install
+          haskell-language-server
+          ghc
+          # Latex/tikz
+          texliveFull
         ];
       };
     });
