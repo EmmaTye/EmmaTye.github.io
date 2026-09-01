@@ -1,0 +1,11 @@
+- title: "A Rig of Transformations - Extended Abstract"
+  date: 2026-08-26
+  slides: "https://github.com/EmmaTye/transformation-rig/blob/main/presentation/main.pdf"
+  venue: TYDE'26, Inria Paris
+  abstract: |
+    In high-level functional languages, the compiler often gives users little control over the runtime representation of data types. Yet how we model data structures at the program level can be different to how we want to represent them at the binary level, for efficiency or legacy reasons. Hence being able to describe data layouts and their transformations for data types is a useful and necessary part of programming, but difficult to do correctly, efficiently and ergonomically. We present a model of finite algebraic data types as a commutative rig (a ring without additive inverses), where the rig-equalities are modelled by isomorphisms between data. Using this approach, we can also model embedding a data type into a larger type (e.g. bit-padding) as a partial isomorphism.
+- title: Classical Call-by-Push-Value
+  date: 2020-07-23
+  venue: Master's Thesis Defence, Imperial College London
+  slides: assets/Classical-CBPV.pdf
+

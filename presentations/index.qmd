@@ -1,0 +1,7 @@
+---
+title: Presentations
+listing:
+  contents: talks.yml
+  template: ../templates/presentations.ejs.md
+---
+

@@ -9,6 +9,9 @@ website:
   navbar:
     background: secondary
     search: true
+    left:
+      - presentations/index.qmd
+      - papers/index.qmd
   page-footer:
     left:
       - icon: github

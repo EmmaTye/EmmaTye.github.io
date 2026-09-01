@@ -1,0 +1,8 @@
+---
+title: Papers
+listing:
+  contents: papers.yml
+  template: ../templates/papers.ejs.md
+---
+
+
