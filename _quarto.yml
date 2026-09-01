@@ -7,15 +7,23 @@ project:
 website:
   title: "Emma Tye"
   navbar:
+    background: secondary
+    search: true
+  page-footer:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - icon: github
+        href: https://github.com/EmmaTye
+      - icon: linkedin
+        href: https://www.linkedin.com/in/emma-tye/
+      - text: personal email
+        href: mailto:tyelouiseemma@gmail.com
+      - text: work email
+        href: mailto:emma.tye@strath.ac.uk
 
 format:
   html:
     theme:
-      - cosmo
+      - minty
       - brand
     css: styles.css
     toc: true

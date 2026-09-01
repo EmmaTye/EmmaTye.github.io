@@ -1,7 +1,13 @@
 ---
-title: "EmmaTye"
+title: ""
+about:
+  template: jolla
+  image: profile.jpg
 ---
 
-This is a Quarto website.
+## About
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hi, I'm Emma (she/her), a PhD student at the University of Strathclyde in the [MSP research group](https://msp.cis.strath.ac.uk/) in Glasgow, under the supervision of [Bob Atkey](https://bentnib.org/) and [Guillaume Allais](https://gallais.github.io/). I'm currently working on correct-by-construction optimisations and representations of data types.
+
+I did an MEng at Imperial College London in Joint Maths & Computer Science, then worked in London as a software engineer for 5 years. In my day-to-day, I use Agda for proofs and Haskell for general coding.
+
