@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "presentations/index.html",
+    "href": "presentations/index.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Upcoming\n    \n      No upcoming presentations\n    \n  \n\n  \n    Past\n    \n      \n  \n    \n      \n        26 Aug 2026\n      \n         TYDE'26, Inria Paris\n      \n    \n\n    \n      \n        \n          A Rig of Transformations - Extended Abstract\n        \n      \n      \n      In high-level functional languages, the compiler often gives users little control over the runtime representation of data types. Yet how we model data structures at the program level can be different to how we want to represent them at the binary level, for efficiency or legacy reasons. Hence being able to describe data layouts and their transformations for data types is a useful and necessary part of programming, but difficult to do correctly, efficiently and ergonomically. We present a model of finite algebraic data types as a commutative rig (a ring without additive inverses), where the rig-equalities are modelled by isomorphisms between data. Using this approach, we can also model embedding a data type into a larger type (e.g. bit-padding) as a partial isomorphism.\n\n      \n    \n\n  \n\n  \n    \n      \n        23 Jul 2020\n      \n         Master's Thesis Defence, Imperial College London\n      \n    \n\n    \n      \n        \n          Classical Call-by-Push-Value\n        \n      \n      \n    \n\n  \n\n    \n  \n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Emma Tye",
@@ -12,5 +19,12 @@
     "title": "Emma Tye",
     "section": "",
     "text": "Hi, I’m Emma (she/her), a PhD student at the University of Strathclyde in the MSP research group in Glasgow, under the supervision of Bob Atkey and Guillaume Allais. I’m currently working on correct-by-construction optimisations and representations of data types.\nI did an MEng at Imperial College London in Joint Maths & Computer Science, then worked in London as a software engineer for 5 years. In my day-to-day, I use Agda for proofs and Haskell for general coding."
+  },
+  {
+    "objectID": "papers/index.html",
+    "href": "papers/index.html",
+    "title": "Papers",
+    "section": "",
+    "text": "2026\n      \n      \n         TYDE'26, Inria Paris\n      \n    \n\n    \n      \n        \n          A Rig of Transformations\n        \n      \n      \n      In high-level functional languages, the compiler often gives users little control over the runtime representation of data types. Yet how we model data structures at the program level can be different to how we want to represent them at the binary level, for efficiency or legacy reasons. Hence being able to describe data layouts and their transformations for data types is a useful and necessary part of programming, but difficult to do correctly, efficiently and ergonomically. We present a model of finite algebraic data types as a commutative rig (a ring without additive inverses), where the rig-equalities are modelled by isomorphisms between data. Using this approach, we can also model embedding a data type into a larger type (e.g. bit-padding) as a partial isomorphism.\n\n      \n    \n  \n  \n  \n    \n      \n        2020\n      \n      \n         Master's Thesis, Imperial College London\n      \n    \n\n    \n      \n        \n          Classical Call by Push Value\n        \n      \n      \n      Call by Push Value (CBPV) is a calculus for explicitly modelling call-by-name and call-by-value reduction in the λ-calculus and many other intuitionistic logic-based calculi. We investigate whether classical logic-based calculi, specifically the λ̅μμ̃-calculus, can model CBPV and therefore subsume the call-by-name and call-by-value paradigms. We augment the λ̅μμ̃-calculus syntax with new features inspired by CBPV, and provide a translation from CBPV into the augmented λ̅μμ̃-calculus. By limiting the traditional reduction of λ̅μμ̃, we can simulate CBPV reduction in this augmented calculus. This should open up avenues for describing the semantics of call-by-name and call-by-value via classical logic semantics.\n\n      \n    \n  \n  \n\nNo matching items"
   }
 ]

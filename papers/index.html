@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Emma Tye</title>
+<title>Papers – Emma Tye</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,22 +29,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6abaf2193701837327d134b708b717b0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6abaf2193701837327d134b708b717b0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,9 +75,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-abstract','listing-pdf','listing-year','listing-venue',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-abstract","listing-pdf","listing-year","listing-venue"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -84,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Emma Tye</span>
     </a>
   </div>
@@ -95,11 +156,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./presentations/index.html"> 
+    <a class="nav-link" href="../presentations/index.html"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./papers/index.html"> 
+    <a class="nav-link active" href="../papers/index.html" aria-current="page"> 
 <span class="menu-text">Papers</span></a>
   </li>  
 </ul>
@@ -113,32 +174,97 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block"></header><main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<section id="about" class="level2">
-<h2 data-anchor-id="about">About</h2>
-<p>Hi, I’m Emma (she/her), a PhD student at the University of Strathclyde in the <a href="https://msp.cis.strath.ac.uk/">MSP research group</a> in Glasgow, under the supervision of <a href="https://bentnib.org/">Bob Atkey</a> and <a href="https://gallais.github.io/">Guillaume Allais</a>. I’m currently working on correct-by-construction optimisations and representations of data types.</p>
-<p>I did an MEng at Imperial College London in Joint Maths &amp; Computer Science, then worked in London as a software engineer for 5 years. In my day-to-day, I use Agda for proofs and Haskell for general coding.</p>
-
-
-</section>
-</main>  
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Papers</h1>
 </div>
- <!-- /main -->
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+
+<div class="list">
+  
+  <div class="row align-items-center py-3 border-bottom listing-item">
+    <div class="col-md-4 text-secondary">
+      
+        <div>2026</div>
+      
+      
+         <div class="mt-1">TYDE'26, Inria Paris</div>
+      
+    </div>
+
+    <div class="col-md-8">
+      <h3 class="anchored">
+        
+          <a href="https://doi.org/10.48550/arXiv.2608.12409" target="_blank" rel="noop noreferrer">A Rig of Transformations</a>
+        
+      </h3>
+      
+      <p class="small text-muted">In high-level functional languages, the compiler often gives users little control over the runtime representation of data types. Yet how we model data structures at the program level can be different to how we want to represent them at the binary level, for efficiency or legacy reasons. Hence being able to describe data layouts and their transformations for data types is a useful and necessary part of programming, but difficult to do correctly, efficiently and ergonomically. We present a model of finite algebraic data types as a commutative rig (a ring without additive inverses), where the rig-equalities are modelled by isomorphisms between data. Using this approach, we can also model embedding a data type into a larger type (e.g. bit-padding) as a partial isomorphism.
+</p>
+      
+    </div>
+  </div>
+  
+  <div class="row align-items-center py-3 border-bottom listing-item">
+    <div class="col-md-4 text-secondary">
+      
+        <div>2020</div>
+      
+      
+         <div class="mt-1">Master's Thesis, Imperial College London</div>
+      
+    </div>
+
+    <div class="col-md-8">
+      <h3 class="anchored">
+        
+          <a href="assets/Classical-CBPV.pdf" target="_blank" rel="noop noreferrer">Classical Call by Push Value</a>
+        
+      </h3>
+      
+      <p class="small text-muted">Call by Push Value (CBPV) is a calculus for explicitly modelling call-by-name and call-by-value reduction in the λ-calculus and many other intuitionistic logic-based calculi. We investigate whether classical logic-based calculi, specifically the λ̅μμ̃-calculus, can model CBPV and therefore subsume the call-by-name and call-by-value paradigms. We augment the λ̅μμ̃-calculus syntax with new features inspired by CBPV, and provide a translation from CBPV into the augmented λ̅μμ̃-calculus. By limiting the traditional reduction of λ̅μμ̃, we can simulate CBPV reduction in this augmented calculus. This should open up avenues for describing the semantics of call-by-name and call-by-value via classical logic semantics.
+</p>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
