@@ -1,0 +1,10 @@
+\documentclass[dvisvgm,tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning,decorations.pathreplacing,calc}
+\begin{document}
+\begin{tikzpicture}
+  \node[rectangle,draw,minimum height=0.6cm] (first) {$0$};
+  \draw[decorate,decoration= {brace,mirror,amplitude=10pt}] (first.south west) -- (first.south east) node [midway,yshift=-15pt] {\texttt{Emp1} tag};
+\end{tikzpicture}
+\end{document}
+

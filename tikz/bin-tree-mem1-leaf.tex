@@ -1,0 +1,11 @@
+\documentclass[dvisvgm,tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning,decorations.pathreplacing,calc}
+\begin{document}
+\begin{tikzpicture}
+  \node[rectangle,draw,minimum height=0.6cm] (first) {$1$};
+  \node[rectangle,draw,minimum height=0.6cm,minimum width=1cm,right=0cm of first] (second) {$a$};
+  \draw[decorate,decoration= {brace,mirror,amplitude=10pt}] (first.south west) -- (first.south east) node [midway,yshift=-15pt] {\texttt{Leaf} tag};
+\end{tikzpicture}
+\end{document}
+

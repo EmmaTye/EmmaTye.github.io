@@ -1,0 +1,19 @@
+\documentclass[dvisvgm,tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning,decorations.pathreplacing,calc}
+\begin{document}
+\begin{tikzpicture}
+  \node[rectangle,draw,minimum height=0.6cm] (first) {$1$};
+  \node[rectangle,draw,minimum height=0.6cm,minimum width=1cm,right=0cm of first] (second) {$a1$};
+  \node[rectangle,draw,minimum height=0.6cm, right=0cm of second] (third) {$1$};
+  \node[rectangle,draw,minimum height=0.6cm,minimum width=1cm,right=0cm of third] (fourth) {$a2$};
+  \node[rectangle,draw,minimum height=0.6cm, right=0cm of fourth] (fifth) {$0$};
+  \node[rectangle,draw,minimum height=0.6cm, right=0cm of fifth] (sixth) {$0$};
+  \node[rectangle,draw,minimum height=0.6cm, right=0cm of sixth] (seventh) {$0$};
+  \draw[decorate,decoration= {brace,mirror,amplitude=10pt}] (first.south west) -- (first.south east) node [midway,yshift=-15pt] {\texttt{Node3}};
+  \draw[decorate,decoration= {brace,amplitude=10pt}] (third.north west) -- (third.north east) node [midway,yshift=15pt] {\texttt{Node2}};
+  \draw[decorate,decoration= {brace,mirror,amplitude=10pt}] (fifth.south west) -- (fifth.south east) node [midway,yshift=-15pt] {\texttt{Emp1}};
+  \draw[decorate,decoration= {brace,amplitude=10pt}] (sixth.north west) -- (sixth.north east) node [midway,yshift=15pt] {\texttt{Emp1}};
+  \draw[decorate,decoration= {brace,mirror,amplitude=10pt}] (seventh.south west) -- (seventh.south east) node [midway,yshift=-15pt] {\texttt{Emp2}};
+\end{tikzpicture}
+\end{document}

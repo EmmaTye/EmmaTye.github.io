@@ -1,0 +1,18 @@
+\documentclass[dvisvgm,tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning,decorations.pathreplacing,calc}
+
+\newcommand{\ptr}{\mathrel{\circ\!\!\to}}
+
+\begin{document}
+\begin{tikzpicture}
+  \node[rectangle,draw,minimum height=0.6cm] (first) {$1$};
+  \node[rectangle,draw,minimum height=0.6cm,minimum width=1cm,right=0cm of first] (second) {$a$};
+  \node[rectangle,draw,minimum height=0.6cm, minimum width=1.5cm,right=0cm of second] (third) {$\ptr$};
+  \node[rectangle,draw,minimum height=0.6cm, minimum width=1.5cm,right=0cm of third] (fourth) {$\ptr$};
+  \draw[decorate,decoration= {brace,mirror,amplitude=10pt}] (first.south west) -- (first.south east) node [midway,yshift=-15pt] {\texttt{Node} tag};
+  \draw[decorate,decoration= {brace,amplitude=10pt}] (third.north west) -- (third.north east) node [midway,yshift=15pt] {Ptr to left subtree};
+  \draw[decorate,decoration= {brace,mirror,amplitude=10pt}] (fourth.south west) -- (fourth.south east) node [midway,yshift=-15pt] {Ptr to right subtree};
+\end{tikzpicture}
+\end{document}
+
