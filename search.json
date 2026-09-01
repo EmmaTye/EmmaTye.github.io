@@ -2,15 +2,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "EmmaTye",
+    "title": "Emma Tye",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Hi, I’m Emma (she/her), a PhD student at the University of Strathclyde in the MSP research group in Glasgow, under the supervision of Bob Atkey and Guillaume Allais. I’m currently working on correct-by-construction optimisations and representations of data types.\nI did an MEng at Imperial College London in Joint Maths & Computer Science, then worked in London as a software engineer for 5 years. In my day-to-day, I use Agda for proofs and Haskell for general coding."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Emma Tye",
     "section": "",
-    "text": "About this site"
+    "text": "Hi, I’m Emma (she/her), a PhD student at the University of Strathclyde in the MSP research group in Glasgow, under the supervision of Bob Atkey and Guillaume Allais. I’m currently working on correct-by-construction optimisations and representations of data types.\nI did an MEng at Imperial College London in Joint Maths & Computer Science, then worked in London as a software engineer for 5 years. In my day-to-day, I use Agda for proofs and Haskell for general coding."
   }
 ]
