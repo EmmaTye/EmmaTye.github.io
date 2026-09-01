@@ -10,3 +10,6 @@ vendor
 *.log
 *.dvi
 
+
+/.quarto/
+**/*.quarto_ipynb

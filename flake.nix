@@ -18,9 +18,7 @@
       devShell = pkgs.mkShell {
         buildInputs = with pkgs; [
           gnumake
-          gcc
-          ruby
-          bundler
+          quarto
           # Haskell
           cabal-install
           haskell-language-server
