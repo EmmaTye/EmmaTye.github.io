@@ -8,4 +8,9 @@
   date: 2020-07-23
   venue: Master's Thesis Defence, Imperial College London
   slides: assets/Classical-CBPV.pdf
+- title: "Intro to Martin-Löf Type Theory"
+  date: 2026-10-20
+  venue: MSP101
+  venueLink: 'https://msp.cis.strath.ac.uk/msp101.html#482'
+  time: 3pm
 
